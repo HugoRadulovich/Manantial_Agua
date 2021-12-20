@@ -1,0 +1,40 @@
+.style_general {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+  }
+  .style_caja {
+    background: #1a84d3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-404 {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background: #1d73a6;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    line-height: 1.7;
+    color: black;
+  }
+  .boton {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #1a84d3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .logo{
+      width: 200px;
+  }

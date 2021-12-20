@@ -1,0 +1,409 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background-color: #1d73a6;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  flex-direction: column; }
+
+h3 {
+  color: #0d2346;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3.5rem; }
+
+section p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 1.3rem; }
+
+.textList {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row; }
+
+nav {
+  background-color: #0080c3; }
+
+nav a img {
+  padding: 20px;
+  width: 200px; }
+
+nav ul li a {
+  color: black; }
+
+nav div ul li a:hover {
+  color: gray; }
+
+/* HEADER */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+header .container {
+  position: relative;
+  z-index: 2; }
+
+.textoVideo {
+  color: #0A4975;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900; }
+
+/* Seccion SOPORTE */
+.soporte {
+  background: #0A4975; }
+
+.soporteTelefono {
+  background: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.soporteTelefonoImg {
+  width: 100px;
+  padding: 20px 20px; }
+
+.soporteTelefonoTxt {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+
+.borderTel {
+  border-radius: 1rem; }
+
+.textoAyudaSize {
+  font-size: 2rem;
+  color: #0d2446; }
+
+.textoLlamanosSize {
+  font-size: 1rem; }
+
+.textoHorario {
+  padding: 20px 20px;
+  font-size: 0.8rem;
+  color: gray; }
+
+.styleTextoProd {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #0d2346; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+footer {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  background: #0080c3; }
+
+/* SECCION EMPRESA */
+/* Aplique scale-in-center */
+.empresaTamañoImagen {
+  width: 100%; }
+
+.empresaTextoSize1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 20px;
+  color: #0d2346; }
+
+.empresaTextoSize2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 20px;
+  color: #0d2346; }
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+/* SECCION CONTACTO */
+.formContacto {
+  width: 340px;
+  height: 460px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  position: relative; }
+
+.formContacto h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+  font-family: "Roboto", sans-serif; }
+
+.formContacto input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2;
+  font-size: 12px; }
+
+.formContacto input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.formContacto p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.formContacto button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Montserrat',sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s; }
+
+.formContacto button:hover {
+  background: #78788c;
+  color: #fff; }
+
+.formContacto div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000; }
+
+.formContacto span {
+  margin: 0 5px 0 15px; }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion HAZ TU PEDIDO */
+.formPedido {
+  width: 400px;
+  height: 850px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  position: relative; }
+
+.formPedido h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c; }
+
+.formPedido input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2; }
+
+.formPedido input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.formPedido p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.tipoPedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px; }
+
+.pedidoCiudad {
+  display: flex;
+  flex-direction: row; }
+
+.textoAclaracion {
+  color: #5a5a5a;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+
+.aclaracionPedido {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 8px; }
+
+.localidad {
+  width: 60%;
+  border-radius: 8px; }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formPedido button {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s; }
+
+.formPedido button:hover {
+  background: #78788c;
+  color: #fff; }
+
+.boton1 {
+  border: 2.5px solid gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 2px;
+  color: #5a5a6e; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+.cardProducto {
+  margin: 1rem;
+  border: #0A4975 solid 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2D97BE; }
+
+.btnProductos {
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  border: solid 2px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 20px;
+  cursor: pointer; }
+
+.one {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.two {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.btnProductos:hover {
+  background-color: blue; }
+
+.style_general {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.style_caja {
+  background: #1a84d3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container-404 {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  background: #1d73a6;
+  padding: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7;
+  color: black; }
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #1a84d3;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
+
+.logo {
+  width: 200px; }
